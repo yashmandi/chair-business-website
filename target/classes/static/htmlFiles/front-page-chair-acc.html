@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            margin-bottom: 2%;
+
+        }
+
+        .business-name {
+            color: #fff;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-right: 450px;
+            margin-left: 0%;
+            /* Adjust the margin as needed */
+        }
+
+        header div {
+            margin-right: 50px;
+            /* Adjust the margin as needed */
+        }
+
+        header img {
+            width: 160px;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            margin-left: 50px;
+
+        }
+
+        nav a {
+            background-color: #61c929;
+            text-decoration: none;
+            border-radius: 4px;
+            color: white;
+            font-weight: 400;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            padding-left: 12px;
+            padding-right: 12px;
+
+        }
+
+        nav a:hover {
+            background-color: #509f25;
+        }
+
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 20px;
+            margin-top: 10px;
+            margin-left: 9%;
+            align-items: center;
+            column-gap: 60px;
+            row-gap: 30px;
+        }
+
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            position: relative;
+            width: 240px;
+            /* Decreased container width */
+            height: 280px;
+            /* Decreased container height */
+        }
+
+        .product:hover {
+            border: 2px solid #45a049;
+            /* Change the border color to your desired green color */
+        }
+
+
+        .product img {
+            max-width: 100%;
+            max-height: 200px;
+            /* Decreased image height */
+            margin-left: 30px;
+            cursor: pointer;
+            /* Add cursor pointer to indicate it's clickable */
+        }
+
+        .product-text {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .product h3,
+        .product p {
+            margin: 0;
+        }
+
+        .product p {
+            color: #888;
+        }
+
+        .buy-now-btn {
+            background-color: #45a049;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            text-align: right;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: right;
+            /* Adjust the height as needed */
+        }
+
+        .chairs-button {
+            background-color: #61c929;
+            border-radius: 4px;
+            color: white;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            padding-left: 12px;
+            padding-right: 12px;
+            position: absolute;
+            top: 98px;
+            left: 10.5%;
+
+        }
+
+        .chairs-button:active {
+            background-color: #607560;
+
+        }
+
+        .chairs-button:hover {
+            background-color: #70cf70;
+        }
+
+
+
+        .access-button {
+            background-color: #61c929;
+            font-weight: 600;
+            border-radius: 4px;
+            border: none;
+            color: white;
+            position: absolute;
+            padding: 8px;
+            padding-left: 12px;
+            padding-right: 12px;
+            cursor: pointer;
+            top: 98px;
+            left: 16%;
+
+
+        }
+
+        .access-button:active {
+            background-color: #041104;
+
+
+        }
+
+        .access-button:hover {
+            background-color: #6dc96d;
+        }
+
+
+        .services-button {
+
+            background-color: #61c929;
+            margin-left: 4px;
+            font-weight: 600;
+            border-radius: 4px;
+            border: none;
+            color: white;
+            position: absolute;
+            padding: 8px;
+            padding-left: 12px;
+            padding-right: 12px;
+            cursor: pointer;
+            top: 98px;
+            left: 26%;
+        }
+
+        .services-button:active {
+            background-color: #041104;
+
+
+        }
+
+        .services-button:hover {
+            background-color: #6dc96d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="grlogo.png" alt="Your Business Logo">
+        </div>
+        <div>
+            <span class="business-name">G.R CHAIRS</span>
+        </div>
+        <nav>
+            <a href="admin-or-user-page.html">My Account</a>
+            <a href="checkout-page.html">Checkout</a>
+            <a href="contact-us-page.html">Contact</a>
+            <a href="admin-or-user-page.html">Login</a>
+
+        </nav>
+        </div>
+
+
+    </header>
+
+
+
+    <div class="products-container">
+        <div class="product">
+            <a href="product-desc.html"> <!-- Add the URL to the product page -->
+                <img src="chair1.jpg" alt="Chair 1">
+            </a>
+            <div class="product-text">
+                <h3>Accessories 1</h3>
+                <p> ₹ 999.0</p>
+                <a href="product-desc.html" class="buy-now-btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <a href="product-desc.html"> <!-- Add the URL to the product page -->
+                <img src="chair1.jpg" alt="Chair 2">
+            </a>
+            <div class="product-text">
+                <h3>Accessories 2</h3>
+                <p>₹ 999.0</p>
+                <a href="product-desc.html" class="buy-now-btn">Buy Now</a>
+            </div>
+        </div>
+
+        <!-- Repeat the product div for each product -->
+
+        <div class="product">
+            <a href="product-desc.html"> <!-- Add the URL to the product page -->
+                <img src="chair1.jpg" alt="Chair 3">
+            </a>
+            <div class="product-text">
+                <h3>Accessories 3</h3>
+                <p>₹ 999.0</p>
+                <a href="product-desc.html" class="buy-now-btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <a href="product-desc.html"> <!-- Add the URL to the product page -->
+                <img src="chair1.jpg" alt="Chair 4">
+            </a>
+            <div class="product-text">
+                <h3>Accessories 4</h3>
+                <p>₹ 999.0</p>
+                <a href="product-desc.html" class="buy-now-btn">Buy Now</a>
+            </div>
+        </div>
+
+        <!-- Additional products -->
+
+        <div class="product">
+            <a href="product-desc.html"> <!-- Add the URL to the product page -->
+                <img src="chair1.jpg" alt="Chair 5">
+            </a>
+            <div class="product-text">
+                <h3>Accessories 5</h3>
+                <p>₹ 999.0</p>
+                <a href="product-desc.html" class="buy-now-btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <a href="product-desc.html"> <!-- Add the URL to the product page -->
+                <img src="chair1.jpg" alt="Chair 6">
+            </a>
+            <div class="product-text">
+                <h3>Accessories 6</h3>
+                <p>₹ 999.0</p>
+                <a href="product-desc.html" class="buy-now-btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <a href="product-desc.html"> <!-- Add the URL to the product page -->
+                <img src="chair1.jpg" alt="Chair 7">
+            </a>
+            <div class="product-text">
+                <h3>Accessories 7</h3>
+                <p>₹ 999.0</p>
+                <a href="product-desc.html" class="buy-now-btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <a href="product-desc.html"> <!-- Add the URL to the product page -->
+                <img src="chair1.jpg" alt="Chair 8">
+            </a>
+            <div class="product-text">
+                <h3>Accessories 8</h3>
+                <p>₹ 999.0</p>
+                <a href="product-desc.html" class="buy-now-btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="front-page-chair-acc.html" class="access-button">Chair Accessories</a>
+        <a href="front-page-login.html" class="chairs-button">Chairs</a>
+        <a href="services-page.html" class="services-button">Services</a>
+    </div>
+
+    <footer>
+        &copy; 2024 Your Business Name. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

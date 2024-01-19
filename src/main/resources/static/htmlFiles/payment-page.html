@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <div class="payment-container">
+        <h1>Payment Page</h1>
+        <div class="qr-section">
+
+            <!-- Placeholder for QR code images -->
+            <img src="qrcode.png" alt="QR Code 1" class="qr-image">
+
+            <!-- Add Screenshot Upload Button -->
+            <input type="file" id="screenshotInput" accept="image/*">
+            <button onclick="uploadScreenshot()">Upload Screenshot</button>
+        </div>
+    </div>
+
+    <script>
+        function uploadScreenshot() {
+            // You can add the logic to handle the uploaded screenshot here
+            var screenshotInput = document.getElementById('screenshotInput');
+            var screenshotFile = screenshotInput.files[0];
+
+            if (screenshotFile) {
+                // You can perform further actions, such as sending the file to the server
+                alert('Screenshot uploaded successfully!');
+            } else {
+                alert('Please select a screenshot to upload.');
+            }
+        }
+    </script>
+</body>
+
+</html>

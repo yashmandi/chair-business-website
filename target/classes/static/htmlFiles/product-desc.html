@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        .product-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .product-photo {
+            margin-top: 4%;
+            margin-left: 3%;
+            width: 50%;
+            height: 50%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            position: absolute;
+            top: 12%;
+            left: 54%;
+        }
+
+        .product-description {
+            margin-bottom: 20px;
+        }
+
+        .product-price {
+            color: #e44d26;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .quantity-button {
+            background-color: #e44d26;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .quantity-display {
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .add-to-cart-button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            font-size: 18px;
+        }
+    </style>
+    <title>Product Page Example</title>
+</head>
+
+<body>
+
+    <div class="product-container">
+        <img src="chairpic.png" alt="Product Photo" class="product-photo">
+        <div class="product-info">
+            <div class="product-title">Comfortable office chair</div>
+            <div class="product-description">
+                A chair is a piece of furniture that is usually made out of wood or plastic. It can also be made out of
+                fabric, metal, wool, and stone. There can be different variants of chairs like stools, rocking chairs,
+                gaming chairs, folding chairs, and armchairs. There are also wide variety of chairs, those with fabric
+                are often called sofas, or couches, while those many without fabric are often referred to as benches.
+                There are also less conventional chairs such as bean bag chairs and swinging chairs.
+            </div>
+
+            <div class="product-price">Price- $99.99</div>
+            <div class="quantity-selector">
+                <button class="quantity-button" onclick="decrement()">-</button>
+                <div class="quantity-display">1</div>
+                <button class="quantity-button" onclick="increment()">+</button>
+            </div>
+            <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <script>
+        let quantity = 1;
+
+        function increment() {
+            quantity++;
+            updateQuantityDisplay();
+        }
+
+        function decrement() {
+            if (quantity > 1) {
+                quantity--;
+                updateQuantityDisplay();
+            }
+        }
+
+        function updateQuantityDisplay() {
+            document.querySelector('.quantity-display').textContent = quantity;
+        }
+
+        function addToCart() {
+            // Add your logic for adding the product to the cart here
+
+            // Display a confirmation message
+            alert('Product successfully added to the cart!');
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dcf7f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #dfdfdf;
+            box-shadow: 0 0 10px rgba(102, 102, 102, 0.1);
+            border-radius: 8px;
+            /* Adjust the corner radius as needed */
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: none;
+        }
+
+        button {
+            background-color: #1ac33f;
+            border-radius: 4px;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2a865e;
+        }
+
+        .feedback {
+            margin-top: 30px;
+            display: none;
+        }
+
+        .feedback.show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <section>
+        <h2>Business Details</h2>
+        <p>
+            G.R Chairs and repairs<br>
+            Address: flat no.8 trimurti classic laxmi nagar lane no.1, pimple gurav, pune <br>
+            Phone: 9096887018/9822237018<br>
+            Email: gopichand.ranvir@gmail.com
+        </p>
+
+        <h2>Enquiry Form</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+
+        <div class="feedback" id="feedbackMessage">
+            <h2>Feedback</h2>
+            <p>Your feedback has been submitted. Thank you!</p>
+            <p>Email: feedback@yourchairbusiness.com</p>
+        </div>
+    </section>
+
+    <script>
+        function submitForm() {
+            // Add your form submission logic here
+
+            // Display the feedback message
+            document.getElementById('feedbackMessage').classList.add('show');
+        }
+    </script>
+
+</body>
+
+</html>
