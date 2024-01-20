@@ -10,9 +10,8 @@
 
   <name>app</name>
   <!-- Update to the actual project's website -->
-
-
-  <properties>
+  apply plugin: 'idea' apply plugin: 'org.springframework.boot' apply plugin:
+  'io.spring.dependency-management' <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
