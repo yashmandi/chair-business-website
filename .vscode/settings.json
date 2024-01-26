@@ -4,5 +4,6 @@
     "java.compile.nullAnalysis.mode": "automatic",
     "editor.fontFamily": "'Cascadia Code', monospace",
     "editor.fontWeight": "300",
-    "editor.fontSize": 14
+    "editor.fontSize": 14,
+    "liveServer.settings.port": 5501
 }

@@ -1,8 +1,8 @@
 package com.chair.dao;
 
 import com.chair.model.Customer;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
+// import org.hibernate.Session;
+// import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.stereotype.Repository;
@@ -11,16 +11,16 @@ import java.util.List;
 
 @Repository
 @Transactional
-public class CustomerDao {
+public interface CustomerDAO {
 
     private final HibernateTemplate hibernateTemplate;
 
     @Autowired
-    public CustomerDao(HibernateTemplate hibernateTemplate) {
+    public CustomerDAO(HibernateTemplate hibernateTemplate) {
         this.hibernateTemplate = hibernateTemplate;
     }
 
-    public Customer getCustomerById(int customerId) {
+    public staticCustomer getCustomerById(int customerId) {
         return hibernateTemplate.get(Customer.class, customerId);
     }
 
@@ -28,7 +28,7 @@ public class CustomerDao {
         return hibernateTemplate.loadAll(Customer.class);
     }
 
-    public void saveCustomer(Customer customer) {
+    public static void saveCustomer(Customer customer) {
         hibernateTemplate.save(customer);
     }
 
