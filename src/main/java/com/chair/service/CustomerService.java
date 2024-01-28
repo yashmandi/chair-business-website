@@ -4,11 +4,11 @@ import java.util.List;
 
 import com.chair.model.Customer;
 
-public class CustomerService {
-    void addCustomer(Customer customer);
+public interface CustomerService {
+    public void addCustomer(Customer customer);
 
-    List<Customer> getAllCustomers();
+    public List<Customer> getAllCustomers();
 
-    Customer getCustomerByemailId(String emailId);
+    public Customer getCustomerByemailId(String emailId);
 
 }

@@ -13,6 +13,11 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
+import com.chair.model.ShippingAddress;
+import com.chair.model.BillingAddress;
+import com.chair.model.User;
+import com.chair.model.Cart;
+
 @Entity
 @Table(name = "customers")
 public class Customer implements Serializable {
