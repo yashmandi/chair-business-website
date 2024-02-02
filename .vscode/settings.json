@@ -2,8 +2,8 @@
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.debug.settings.onBuildFailureProceed": true,
     "java.compile.nullAnalysis.mode": "automatic",
-    "editor.fontFamily": "'Cascadia Code', monospace",
-    "editor.fontWeight": "300",
+    "editor.fontFamily": "Consolas, monospace",
+    "editor.fontWeight": "350",
     "editor.fontSize": 14,
     "liveServer.settings.port": 5501,
     "terminal.integrated.fontFamily": "Consolas, monospace"
