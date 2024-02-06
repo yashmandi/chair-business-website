@@ -2,9 +2,9 @@
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.debug.settings.onBuildFailureProceed": true,
     "java.compile.nullAnalysis.mode": "automatic",
-    "editor.fontFamily": "Consolas, monospace",
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
     "editor.fontWeight": "350",
-    "editor.fontSize": 14,
+    "editor.fontSize": 15,
     "liveServer.settings.port": 5501,
     "terminal.integrated.fontFamily": "Consolas, monospace"
 }

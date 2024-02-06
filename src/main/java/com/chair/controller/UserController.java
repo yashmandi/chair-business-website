@@ -34,7 +34,7 @@ public class UserController {
         ShippingAddress sa = new ShippingAddress();
         customer.setShippingAddress(sa);
         customer.setBillingAddress(ba);
-        customer.setUsers(user);
+        customer.setUser(user);
 
         return new ModelAndView("register", "customer", customer);
     }
@@ -49,5 +49,4 @@ public class UserController {
         model.addAttribute("registrationSuccess", "Registered Successfully. Login using username and password");
         return "login";
     }
-
 }

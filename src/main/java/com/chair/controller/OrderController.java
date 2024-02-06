@@ -5,7 +5,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.chair.model.Cart;
 import com.chair.model.Customer;
+import com.chair.model.CustomerOrder;
 import com.chair.service.CartService;
 import com.chair.service.CustomerOrderService;
 

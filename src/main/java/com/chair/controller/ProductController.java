@@ -15,6 +15,7 @@ import org.springframework.web.multipart.MultipartResolver;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.chair.model.Product;
+import com.chair.service.ProductService;
 
 import jakarta.annotation.PreDestroy;
 
@@ -145,7 +146,6 @@ public class ProductController {
 
     @RequestMapping("/productsListAngular")
     public String getProducts() {
-        return "productListAngular"; 
+        return "productListAngular";
     }
-
 }

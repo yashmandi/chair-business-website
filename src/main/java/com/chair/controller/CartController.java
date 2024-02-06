@@ -3,10 +3,14 @@ package com.chair.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
+import org.springframework.security.core.context.SecurityContextHolder;
 import com.chair.model.Cart;
+import com.chair.model.Customer;
+import com.chair.model.User;
+import com.chair.service.CartService;
 import com.chair.service.CustomerService;
 
 @Controller
