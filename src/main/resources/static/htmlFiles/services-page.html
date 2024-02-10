@@ -17,6 +17,10 @@
             width: 300px;
             margin: 10px;
             border: 1px solid #ddd;
+            display: flex;
+            /* Added to use flexbox */
+            flex-direction: column;
+            /* Changed from row to column */
         }
 
         .dropdown-header {
@@ -34,14 +38,21 @@
         .dropdown-content {
             display: none;
             margin-top: 5px;
+            flex-grow: 1;
+            /* Added to allow content to take remaining space */
         }
 
         .dropdown-content textarea {
-            width: 100%;
-            height: 100px;
+            width: calc(100% - 20px);
+            /* Adjusted to consider padding */
+            height: 100%;
             padding: 10px;
             border: 1px solid #ddd;
             resize: vertical;
+            font-family: Arial, sans-serif;
+            /* Added to change font */
+            font-size: 14px;
+            /* Adjust font size if needed */
         }
     </style>
 </head>
@@ -51,14 +62,18 @@
     <div class="dropdown-container">
         <button onclick="toggleDropdown('restoration')" class="dropdown-header">Restoration</button>
         <div class="dropdown-content" id="restoration">
-            <textarea placeholder="Enter text for Restoration..."></textarea>
+            <textarea
+                placeholder="We fix up your chairs like new! Our restoration service takes care of any little issues, from adding accessories to repairing defects. Trust us to make your chairs look great and work perfectly again."
+                readonly></textarea>
         </div>
     </div>
 
     <div class="dropdown-container">
         <button onclick="toggleDropdown('cleaning')" class="dropdown-header">Cleaning</button>
         <div class="dropdown-content" id="cleaning">
-            <textarea placeholder="Enter text for Cleaning..."></textarea>
+            <textarea
+                placeholder="Get your chairs sparkling clean with our expert service. We'll wash away dirt and stains and add a protective coating to keep them looking fresh. Say goodbye to grime and hello to chairs that shine!"
+                readonly></textarea>
         </div>
     </div>
 

@@ -1,7 +1,6 @@
 package com.chair.model;
 
 import java.io.Serializable;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -75,5 +74,4 @@ public class CustomerOrder implements Serializable {
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
-
 }
